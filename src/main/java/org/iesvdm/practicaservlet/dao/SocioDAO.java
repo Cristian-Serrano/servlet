@@ -1,0 +1,18 @@
+package org.iesvdm.practicaservlet.dao;
+
+import org.iesvdm.practicaservlet.model.Socio;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface SocioDAO {
+
+    public void create(Socio socio);
+
+    public List<Socio> getAll();
+    public Optional<Socio> find(int id);
+
+    public void update(Socio socio);
+
+    public void delete(int id);
+}
